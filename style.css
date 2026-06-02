@@ -2193,3 +2193,78 @@ body{
 
     margin-bottom:10px;
 }
+
+.qrcodepix1,
+.boletopagamento1{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    padding:60px 20px;
+}
+
+.qrcodepix2,
+.boletopagamento2{
+    width:100%;
+    max-width:500px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+}
+
+.qrcodepix3,
+.boletopagamento3{
+    width:250px;
+    max-width:100%;
+    margin:20px auto;
+    display:block;
+}
+
+.qrcodepix4,
+.boletopagamento4{
+    color:#666;
+    line-height:1.6;
+}
+
+.qrcodepix6,
+.boletopagamento6{
+    background:#f5f5f5;
+    padding:12px;
+    border-radius:10px;
+    margin:20px 0;
+    word-break:break-all;
+}
+
+.qrcodepix5,
+.boletopagamento5{
+    display:inline-block;
+
+    background:linear-gradient(
+    135deg,
+    #8fb3d9,
+    #6d8aa6
+    );
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.qrcodepix5:hover,
+.boletopagamento5:hover{
+    transform:translateY(-2px);
+}

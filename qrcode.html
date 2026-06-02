@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Finalizar</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+ 
+<body>
+
+    <section class="qrcodepix1">
+
+        <div class="qrcodepix2">
+
+            <h2>Pagamento via PIX</h2>
+
+            <img src="https://cdn.phototourl.com/member/2026-06-02-2abfb746-ec78-44aa-bf00-d094ee3f71d0.webp"
+                alt="QR Code PIX" class="qrcodepix3">
+
+            <p class="qrcodepix4">
+                Escaneie o QR Code acima para realizar o pagamento.
+            </p>
+
+            <p class="qrcodepix4">
+                Ou copie o código PIX abaixo:
+            </p>
+
+            <div class="qrcodepix6">
+
+                <span id="codigopix">
+              000201FOCUSSTUDY6304ABCD
+                </span>
+
+                <button
+                class="boletopagamento9"
+                onclick="copiarBoleto()"
+            >
+                Copiar Código
+            </button>
+
+            </div>
+
+            <a href="finalizarcompra2.html" class="qrcodepix5">
+                Já realizei o pagamento
+            </a>
+
+        </div>
+
+    </section>
+
+    <script>
+
+        function copiarPix() {
+
+            const codigo =
+                document.getElementById("codigopix").innerText;
+
+            navigator.clipboard.writeText(codigo);
+
+            const botao =
+                document.querySelector(".qrcodepix7");
+
+            botao.innerText = "Copiado ✓";
+
+            setTimeout(() => {
+
+                botao.innerText = "Copiar";
+
+            }, 2000);
+
+        }
+
+    </script>
+
+</body>
+
+</html>
