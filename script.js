@@ -242,8 +242,32 @@ function renderizarCarrinho(){
     "produtoCarrinho"
     );
 
-    if(!area || !produto) return;
+if(!area) return;
 
+if(!produto){
+
+    area.innerHTML =
+
+    `
+    <p class="carVazio">
+
+    Você ainda não tem produtos no carrinho
+
+    </p>
+    `;
+
+    document.getElementById(
+    "subtotal"
+    ).innerText =
+    "R$0,00";
+
+    document.getElementById(
+    "total"
+    ).innerText =
+    "R$0,00";
+
+    return;
+}
     atualizarTotal();
 
     area.innerHTML =

@@ -1559,6 +1559,21 @@ body{
 
 }
 
+.carVazio{
+    background:#eef3f8;
+
+    border-radius:30px;
+
+    padding:50px 30px;
+
+    text-align:center;
+
+    color:#6d8aa6;
+
+    font-size:22px;
+    font-weight:bold;
+}
+
 /* COMPRADADOSVISU */
 
 .dados1{
