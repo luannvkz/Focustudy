@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Finalizar</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+</head>
+<body>
+ 
+ <section class="boletopagamento1">
+
+        <div class="boletopagamento2">
+
+            <h1 class="boletopagamento7">
+                Pagamento via Boleto
+            </h1>
+
+            <img
+                src="https://cdn.phototourl.com/member/2026-06-02-a860b42a-7d1f-45d3-88a2-3b408ad83af9.png"
+                alt="Boleto Bancário"
+                class="boletopagamento3"
+            >
+
+            <p class="boletopagamento4">
+                Utilize a linha digitável abaixo para realizar o pagamento.
+            </p>
+
+            <div class="boletopagamento6" id="codigoBoleto">
+                34191.79001 01043.510047 91020.150008 5 89770000010000
+            </div>
+
+            <button
+                class="boletopagamento9"
+                onclick="copiarBoleto()"
+            >
+                Copiar Código
+            </button>
+
+            <p class="boletopagamento8">
+                Após efetuar o pagamento, clique no botão abaixo para prosseguir.
+            </p>
+
+            <a href="finalizarcompra2.html" class="boletopagamento5">
+                Já realizei o pagamento
+            </a>
+
+        </div>
+
+    </section>
+
+    <script>
+        function copiarBoleto() {
+
+            const codigo =
+                document.getElementById("codigoBoleto").innerText;
+
+            navigator.clipboard.writeText(codigo)
+                .then(() => {
+
+                    const botao =
+                        document.querySelector(".boletopagamento9");
+
+                    botao.innerText = "Código Copiado ✓";
+
+                    setTimeout(() => {
+                        botao.innerText = "Copiar Código";
+                    }, 2000);
+
+                })
+                .catch(() => {
+                    alert("Não foi possível copiar o código.");
+                });
+        }
+    </script>
+
+</body>
+</html>

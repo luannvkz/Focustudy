@@ -2068,3 +2068,128 @@ body{
     text-decoration:none;
     color:#111;
 }
+
+.boletopagamento1{
+    width:100%;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:10px;
+
+    background:#f5f7fa;
+}
+
+.boletopagamento2{
+    width:100%;
+    max-width:650px;
+
+    background:#ffffff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.boletopagamento3{
+    width:100%;
+    max-width:500px;
+
+    margin:25px auto;
+
+    display:block;
+}
+
+.boletopagamento4{
+    color:#666;
+
+    font-size:15px;
+
+    line-height:1.6;
+}
+
+.boletopagamento6{
+    margin-top:20px;
+
+    padding:15px;
+
+    background:#f3f3f3;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    word-break:break-all;
+}
+
+.boletopagamento9{
+    margin-top:15px;
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#4CAF50;
+
+    color:white;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.boletopagamento9:hover{
+    transform:translateY(-2px);
+}
+
+.boletopagamento8{
+    margin-top:25px;
+
+    color:#666;
+
+    line-height:1.6;
+}
+
+.boletopagamento5{
+    display:inline-block;
+
+    margin-top:20px;
+
+    padding:14px 30px;
+
+    background:#8fb3d9;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    transition:0.3s;
+}
+
+.boletopagamento5:hover{
+    transform:translateY(-2px);
+}
+
+.boletopagamento7{
+    color:#333;
+
+    margin-bottom:10px;
+}
